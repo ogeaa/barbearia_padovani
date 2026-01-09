@@ -1,0 +1,39 @@
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários
+*.log
+*.tmp
+*.temp
+
+# Arquivos de teste
+teste-imagens.html
+VERIFICAR_IMAGENS.html
+script-imagens.js
+
+# Arquivos de documentação local
+ideia.txt
+LEIA-ME.txt
+COMO_ADICIONAR_IMAGENS.txt
+COMO_USAR.txt
+INSTRUCOES.md
+
+# Arquivos Next.js (se não estiver usando)
+/node_modules
+/.next/
+/out/
+/build
+.pnp.js
+.pnp
+*.tsbuildinfo
+next-env.d.ts
+
+# Arquivos de ambiente
+.env*.local
+.env
+
+# Vercel
+.vercel
+

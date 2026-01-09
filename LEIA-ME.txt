@@ -1,0 +1,126 @@
+═══════════════════════════════════════════════════════════
+  BARBEARIA PADOVANI - SITE ONE-PAGE
+═══════════════════════════════════════════════════════════
+
+✅ VERSÃO SIMPLES - HTML/CSS/JS PURO
+
+Este é o site mais fácil de usar! Basta abrir o arquivo 
+index.html no navegador.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 COMO USAR:
+
+1. Clique duas vezes no arquivo:
+   → index.html
+
+2. O site abrirá no seu navegador!
+
+Pronto! Não precisa instalar nada, não precisa rodar servidor,
+não precisa de Node.js. É só abrir e usar!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 PERSONALIZAR:
+
+Para editar as informações da barbearia, abra o arquivo:
+→ index.html
+
+Procure e edite:
+
+1. WhatsApp:
+   Procure por: "5511999999999"
+   Substitua pelo número real (formato: país + DDD + número)
+
+2. Endereço:
+   Procure por: "Rua Exemplo, 123"
+   Substitua pelo endereço real
+
+3. Horários:
+   Procure por: "09:00 - 19:00"
+   Ajuste os horários conforme necessário
+
+4. Serviços e Preços:
+   Procure pela seção "Services Section"
+   Edite os serviços e valores
+
+5. Redes Sociais:
+   Procure por: "instagram.com/barbeariapadovani"
+   Substitua pelos links reais
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 PERSONALIZAR CORES:
+
+Abra o arquivo: style.css
+
+Procure por: :root
+
+Lá você pode alterar as cores:
+- --accent: Cor dourada (padrão: #d4af37)
+- --primary: Cor preta principal (padrão: #1a1a1a)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🖼️ TROCAR IMAGENS:
+
+As imagens estão usando URLs do Unsplash (placeholder).
+
+Para usar suas próprias imagens:
+
+1. Coloque as imagens na pasta do projeto
+2. No index.html, substitua as URLs por:
+   "nome-da-sua-imagem.jpg"
+
+Exemplo:
+   De: https://images.unsplash.com/photo-...
+   Para: "foto-barbearia-1.jpg"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🗺️ AJUSTAR MAPA:
+
+No index.html, procure por:
+   "Rua Exemplo, 123"
+
+Substitua pelo endereço real em TODOS os lugares onde aparece.
+
+O Google Maps vai atualizar automaticamente!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 RESPONSIVO:
+
+O site já é totalmente responsivo e funciona perfeitamente
+em celulares, tablets e computadores!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 PUBLICAR ONLINE:
+
+Para colocar o site no ar, você pode usar:
+
+1. GitHub Pages (grátis)
+2. Netlify (grátis)
+3. Vercel (grátis)
+4. Qualquer hospedagem de sites estáticos
+
+Basta fazer upload dos arquivos:
+- index.html
+- style.css
+- script.js
+- (e suas imagens, se tiver)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ DÚVIDAS?
+
+Tudo está bem comentado no código. Basta abrir os arquivos
+e procurar pelos textos que você quer alterar!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ PRONTO PARA USAR!
+
+É só abrir o index.html e começar a personalizar!
+

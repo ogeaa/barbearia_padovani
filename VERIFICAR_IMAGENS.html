@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Imagens - Barbearia Padovani</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #d4af37;
+            margin-bottom: 2rem;
+        }
+        .check-item {
+            background: #2d2d2d;
+            border: 1px solid #404040;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .check-item h2 {
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+        .status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+        .status.ok {
+            background: #25D366;
+            color: white;
+        }
+        .status.error {
+            background: #e74c3c;
+            color: white;
+        }
+        .path {
+            color: #9ca3af;
+            font-family: monospace;
+            margin-top: 0.5rem;
+        }
+        .instructions {
+            background: #0a0a0a;
+            border-left: 4px solid #d4af37;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+        }
+        .instructions h3 {
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Verificador de Imagens - Barbearia Padovani</h1>
+        
+        <div class="check-item">
+            <h2>1. Logo da Barbearia <span id="logo-status" class="status">Verificando...</span></h2>
+            <p class="path">Caminho: <code>images/logo.png</code></p>
+            <div id="logo-result"></div>
+        </div>
+
+        <div class="check-item">
+            <h2>2. Foto da Equipe <span id="equipe-status" class="status">Verificando...</span></h2>
+            <p class="path">Caminho: <code>images/equipe.jpg</code></p>
+            <div id="equipe-result"></div>
+        </div>
+
+        <div class="check-item">
+            <h2>3. Foto Promocional Kelwin <span id="kelwin-status" class="status">Verificando...</span></h2>
+            <p class="path">Caminho: <code>images/kelwin-promocional.jpg</code></p>
+            <div id="kelwin-result"></div>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 Instruções:</h3>
+            <ol>
+                <li>Certifique-se de que a pasta <strong>images</strong> está na mesma pasta do <strong>index.html</strong></li>
+                <li>Os arquivos devem ter exatamente estes nomes:
+                    <ul>
+                        <li><code>logo.png</code> (ou <code>logo.jpg</code>)</li>
+                        <li><code>equipe.jpg</code> (ou <code>equipe.png</code>)</li>
+                        <li><code>kelwin-promocional.jpg</code> (ou <code>kelwin-promocional.png</code>)</li>
+                    </ul>
+                </li>
+                <li>Se os nomes forem diferentes, você precisa editar o <strong>index.html</strong> e alterar os caminhos</li>
+                <li>Recarregue esta página após adicionar as imagens</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        function checkImage(path, name, statusId, resultId) {
+            const img = new Image();
+            const statusEl = document.getElementById(statusId);
+            const resultEl = document.getElementById(resultId);
+            
+            img.onload = function() {
+                statusEl.textContent = '✓ Encontrada';
+                statusEl.className = 'status ok';
+                resultEl.innerHTML = `
+                    <p style="color: #25D366; margin-top: 0.5rem;">✓ Imagem carregada com sucesso!</p>
+                    <img src="${path}" alt="${name}" style="max-width: 300px; margin-top: 1rem;">
+                `;
+            };
+            
+            img.onerror = function() {
+                statusEl.textContent = '✗ Não encontrada';
+                statusEl.className = 'status error';
+                resultEl.innerHTML = `
+                    <p style="color: #e74c3c; margin-top: 0.5rem;">✗ Imagem não encontrada!</p>
+                    <p style="color: #9ca3af; margin-top: 0.5rem;">
+                        Verifique se o arquivo <strong>${name}</strong> está na pasta <strong>images/</strong>
+                    </p>
+                `;
+            };
+            
+            img.src = path;
+        }
+
+        // Verificar todas as imagens
+        checkImage('./images/logo.png', 'logo.png', 'logo-status', 'logo-result');
+        checkImage('./images/equipe.jpg', 'equipe.jpg', 'equipe-status', 'equipe-result');
+        checkImage('./images/kelwin-promocional.jpg', 'kelwin-promocional.jpg', 'kelwin-status', 'kelwin-result');
+    </script>
+</body>
+</html>
+

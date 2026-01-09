@@ -1,0 +1,82 @@
+═══════════════════════════════════════════════════════════
+  COMO ADICIONAR AS IMAGENS NO SITE
+═══════════════════════════════════════════════════════════
+
+📁 PASSO 1: LOCALIZAR A PASTA
+
+A pasta "images" já foi criada em:
+   D:\PROGRAMAÇÃO\barbearia_padovani\images\
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📸 PASSO 2: ADICIONAR AS IMAGENS
+
+Coloque as 3 imagens na pasta "images" com estes nomes EXATOS:
+
+1. logo.png (ou logo.jpg)
+   → Logo da barbearia com KP
+
+2. equipe.jpg (ou equipe.png)
+   → Foto da equipe completa
+
+3. kelwin-promocional.jpg (ou kelwin-promocional.png)
+   → Foto promocional do Kelwin
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ PASSO 3: VERIFICAR
+
+Abra o arquivo:
+   VERIFICAR_IMAGENS.html
+
+Ele vai mostrar se as imagens foram encontradas ou não!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 SE AS IMAGENS TIVEREM NOMES DIFERENTES:
+
+Se suas imagens têm nomes diferentes, você precisa editar o index.html:
+
+1. Abra o arquivo index.html
+2. Procure por "images/logo.png"
+3. Substitua pelo nome real da sua imagem
+4. Faça o mesmo para as outras imagens
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 ESTRUTURA CORRETA:
+
+barbearia_padovani/
+├── images/
+│   ├── logo.png          ← Coloque aqui
+│   ├── equipe.jpg        ← Coloque aqui
+│   └── kelwin-promocional.jpg  ← Coloque aqui
+├── index.html
+└── style.css
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ PROBLEMAS COMUNS:
+
+1. "Imagem não aparece"
+   → Verifique se o nome do arquivo está EXATO (maiúsculas/minúsculas importam)
+   → Verifique se está na pasta "images" (não "image" ou "Images")
+
+2. "Pasta não existe"
+   → A pasta já foi criada automaticamente
+   → Se não existir, crie manualmente: barbearia_padovani/images/
+
+3. "Caminho errado"
+   → As imagens devem estar em: barbearia_padovani/images/
+   → O index.html está em: barbearia_padovani/
+   → O caminho relativo "./images/" está correto
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 DICA:
+
+Use o arquivo VERIFICAR_IMAGENS.html para testar!
+Ele mostra exatamente quais imagens estão faltando.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+

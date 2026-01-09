@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 2rem;
+        }
+        .test-item {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #2d2d2d;
+            border-radius: 8px;
+        }
+        .test-item h2 {
+            color: #d4af37;
+            margin-bottom: 1rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #404040;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        .error {
+            color: #e74c3c;
+            padding: 1rem;
+            background: rgba(231, 76, 60, 0.1);
+            border: 1px solid #e74c3c;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+        .success {
+            color: #25D366;
+            padding: 1rem;
+            background: rgba(37, 211, 102, 0.1);
+            border: 1px solid #25D366;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Teste de Imagens - Barbearia Padovani</h1>
+    
+    <div class="test-item">
+        <h2>1. Logo (images/logo.png)</h2>
+        <p>Caminho: <code>images/logo.png</code></p>
+        <img src="images/logo.png" alt="Logo" id="logo-test" onload="document.getElementById('logo-status').innerHTML='<div class=success>✓ Imagem carregada com sucesso!</div>'" onerror="document.getElementById('logo-status').innerHTML='<div class=error>✗ Erro ao carregar imagem. Verifique se o arquivo existe em: images/logo.png</div>'">
+        <div id="logo-status"></div>
+    </div>
+
+    <div class="test-item">
+        <h2>2. Equipe (images/time.png)</h2>
+        <p>Caminho: <code>images/time.png</code></p>
+        <img src="images/time.png" alt="Equipe" id="time-test" onload="document.getElementById('time-status').innerHTML='<div class=success>✓ Imagem carregada com sucesso!</div>'" onerror="document.getElementById('time-status').innerHTML='<div class=error>✗ Erro ao carregar imagem. Verifique se o arquivo existe em: images/time.png</div>'">
+        <div id="time-status"></div>
+    </div>
+
+    <div class="test-item">
+        <h2>3. Kelwin (images/kelwin.png)</h2>
+        <p>Caminho: <code>images/kelwin.png</code></p>
+        <img src="images/kelwin.png" alt="Kelwin" id="kelwin-test" onload="document.getElementById('kelwin-status').innerHTML='<div class=success>✓ Imagem carregada com sucesso!</div>'" onerror="document.getElementById('kelwin-status').innerHTML='<div class=error>✗ Erro ao carregar imagem. Verifique se o arquivo existe em: images/kelwin.png</div>'">
+        <div id="kelwin-status"></div>
+    </div>
+
+    <div style="background: #0a0a0a; padding: 2rem; border-radius: 8px; margin-top: 2rem;">
+        <h3 style="color: #d4af37;">📋 Instruções:</h3>
+        <ol>
+            <li>Se todas as imagens aparecerem aqui, o problema está no index.html</li>
+            <li>Se alguma imagem não aparecer, verifique se o arquivo está na pasta correta</li>
+            <li>Certifique-se de que os nomes dos arquivos estão exatamente como mostrado acima</li>
+            <li>Verifique se não há espaços extras nos nomes dos arquivos</li>
+        </ol>
+    </div>
+</body>
+</html>
+

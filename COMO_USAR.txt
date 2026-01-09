@@ -1,0 +1,89 @@
+═══════════════════════════════════════════════════════════
+  BARBEARIA PADOVANI - GUIA PASSO A PASSO
+═══════════════════════════════════════════════════════════
+
+🔍 PASSO 1: VERIFICAR SE TEM NODE.JS
+
+   Clique duas vezes em:
+   → VERIFICAR_NODEJS.bat
+   
+   Se aparecer erro, instale o Node.js:
+   https://nodejs.org/ (versão LTS)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📦 PASSO 2: INSTALAR E RODAR (PRIMEIRA VEZ)
+
+   Clique duas vezes em:
+   → INSTALAR_E_RODAR.bat
+   
+   Isso vai:
+   - Instalar todas as dependências
+   - Iniciar o servidor
+   - Abrir o site no navegador
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 PASSO 3: RODAR O SITE (PRÓXIMAS VEZES)
+
+   Clique duas vezes em:
+   → RODAR.bat
+   
+   Isso vai iniciar o servidor e abrir o site.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 ACESSAR O SITE MANUALMENTE:
+
+   Se o navegador não abrir automaticamente,
+   abra manualmente e acesse:
+   
+   http://localhost:3000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 SE NÃO FUNCIONAR:
+
+   1. Execute: TESTAR_INSTALACAO.bat
+      (vai mostrar o que está faltando)
+
+   2. Execute: VERIFICAR_NODEJS.bat
+      (vai verificar se Node.js está instalado)
+
+   3. Se aparecer erro, copie a mensagem de erro
+      e me envie para eu ajudar!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 ORDEM CORRETA:
+
+   PRIMEIRA VEZ:
+   1. VERIFICAR_NODEJS.bat
+   2. INSTALAR_E_RODAR.bat
+   
+   PRÓXIMAS VEZES:
+   1. RODAR.bat
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ PROBLEMAS COMUNS:
+
+   ❌ "Node.js não encontrado"
+      → Instale em: https://nodejs.org/
+      → Escolha versão LTS
+      → Reinicie o computador
+
+   ❌ "npm não encontrado"
+      → Reinstale o Node.js
+      → npm vem junto com Node.js
+
+   ❌ "Porta 3000 já em uso"
+      → Feche outros programas que usam a porta 3000
+      → Ou reinicie o computador
+
+   ❌ Site não abre
+      → Aguarde 10-15 segundos após rodar
+      → Abra manualmente: http://localhost:3000
+      → Verifique se apareceu "Ready" no terminal
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
